@@ -1,0 +1,4 @@
+{
+  "headers": ["Name","Member ID","Type","Status"],
+  "rows": [ ["Alice","M001","Student","Active"], ["Bob","M002","Faculty","Inactive"] ]
+}
