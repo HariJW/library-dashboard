@@ -1,7 +1,19 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashboardLayout from "./components/DashboardLayout";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
-  return <div>Ganapati Bappa Morya</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DashboardLayout />}>
+          <Route index element={<DashboardPage />} />
+          <Route path="/books" element={<DashboardPage />} />
+          <Route path="/members" element={<DashboardPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
