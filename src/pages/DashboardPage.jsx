@@ -1,8 +1,8 @@
-import DynamicComponentLoader from '../components/DynamicComponentLoader'
+import DynamicComponentLoader from "../components/DynamicComponentLoader";
 export default function DashboardPage() {
   return (
-    <div>
+    <div className="px-2 sm:px-4">
       <DynamicComponentLoader />
     </div>
-  )
+  );
 }
