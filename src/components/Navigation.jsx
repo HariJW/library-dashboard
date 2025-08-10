@@ -6,7 +6,7 @@ export default function Navigation({ onItemClick }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetchJSON("/data/navigation.json")
+    fetchJSON("./data/navigation.json")
       .then(setItems)
       .catch(() => setItems([]));
   }, []);

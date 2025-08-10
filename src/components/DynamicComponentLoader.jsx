@@ -17,7 +17,7 @@ export default function DynamicComponentLoader() {
       setComponents(null);
       setError(null);
       try {
-        const nav = await fetchJSON("/data/navigation.json");
+        const nav = await fetchJSON("./data/navigation.json");
         const current = nav.find((item) => item.path === location.pathname);
         if (!current) {
           setComponents([]);

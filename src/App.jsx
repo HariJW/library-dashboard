@@ -4,12 +4,12 @@ import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/library-dashboard/">
       <Routes>
-        <Route path="/" element={<DashboardLayout />}>
+        <Route path="" element={<DashboardLayout />}>
           <Route index element={<DashboardPage />} />
-          <Route path="/books" element={<DashboardPage />} />
-          <Route path="/members" element={<DashboardPage />} />
+          <Route path="books" element={<DashboardPage />} />
+          <Route path="members" element={<DashboardPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
